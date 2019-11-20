@@ -1,0 +1,53 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+}
+
+.dino-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.dino {
+  display: block;
+  width: 100%;
+}
+
+.dino {
+  width: 25em;
+}
+
+.dino:nth-child(even) {
+    display: none;
+  }
+
+@media only screen and (min-width: 25em) {
+
+  .dino:nth-child(even) {
+    display: inline-block;
+    width: 50%;
+}
+
+.dino:nth-child(odd) {
+  display: inline-block;
+  width: 50%;
+}
+
+  }
+
+@media only screen and (min-width: 38em) {
+
+@media only screen and (min-width: 60em) {
+
+.dino {
+  width: 100%;
+}
